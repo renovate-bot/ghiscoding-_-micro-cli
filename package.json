@@ -32,7 +32,7 @@
   "scripts": {
     "are-types-wrong": "pnpx @arethetypeswrong/cli --pack .",
     "clean": "premove dist",
-    "build": "npm run clean && npm run biome:write && tsc",
+    "build": "npm run clean && npm run biome:write && tsc -p tsconfig.build.json",
     "biome:check": "npm run biome:lint:check && npm run biome:format:check",
     "biome:write": "npm run biome:lint:write && npm run biome:format:write",
     "biome:lint:check": "biome lint ./src",
